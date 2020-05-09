@@ -1,14 +1,14 @@
 ### Create Local Repository ###
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands
+mulpu@satishvm MINGW64 ~/github/projects/git_commands
 $ git init
-Initialized empty Git repository in C:/Users/mulpu/OneDrive/Tools/Git_workspace/github/projects/git_commands/.git/
+Initialized empty Git repository in C:/Users/mulpu/github/projects/git_commands/.git/
 
 ### ADD file ###
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (master)
 $ touch first.txt
 
 ### Verify the STATUS ###
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (master)
 $ git status
 On branch master
 
@@ -21,10 +21,10 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 ### Add file to the STAGING area / environment ###
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (master)
 $ git add first.txt
 
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (master)
 $ git status
 On branch master
 
@@ -39,7 +39,7 @@ Note : Staging environment ie stage / index
 
 ###  Create COMMIT ###
 
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (master)
 $ git commit -m "first.txt : First commit"
 
 *** Please tell me who you are.
@@ -54,7 +54,7 @@ Omit --global to set the identity only in this repository.
 
 Note : GIT is getting used for the first time, please set the required info - name & email.
 
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (master)
 $ git commit -m "first.txt : First commit"
 [master (root-commit) 0f7d73b] first.txt : First commit
  1 file changed, 0 insertions(+), 0 deletions(-)
@@ -66,17 +66,17 @@ Plannig to add new FEATURE, but worried about the consequences. This is where GI
 
 Branches allow you to move back and forth between 'states' of a project. Once you're done with the feature / page, you can merge your changes from your branch into the master branch.
 
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (master)
 $ git branch
 * master
 
 Checkout option will be used to create new BRANCH n switched to the new BRANCH with the MASTER branch code, here.
 
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (master)
 $ git checkout -b branch1                                                                                               
 Switched to a new branch 'branch1'
 
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (branch1)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (branch1)
 $ git branch
 * branch1
   master
@@ -89,10 +89,10 @@ Till now, we have the CODE in local repository only. Suppose if required to work
 
 Create a Repository.'git_github_util', in GitHub. Follow the below steps to PUSH the changes from LOCAL to GitHub Repository.
 
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (branch1)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (branch1)
 $ git remote add origin https://github.com/mulpurusatish/git_github_util.git
 
-mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (branch1)
+mulpu@satishvm MINGW64 ~/github/projects/git_commands (branch1)
 $ git push -u origin master
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
@@ -112,7 +112,7 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
    git status
    git push origin branch1
    
-   mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (branch1)
+   mulpu@satishvm MINGW64 ~/github/projects/git_commands (branch1)
 $ git push origin branch1
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
