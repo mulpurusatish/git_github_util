@@ -129,9 +129,16 @@ To https://github.com/mulpurusatish/git_github_util.git
 
 PULL request will be used to ALERT the Repository Owner's that you want to make some changes to their CODE.
 
+PULL request will MERGE the changes from CHILD --> MASTER
 
-###  ###
 
-###  ###
+### REVERT the changes, if required ###
+REVERT / Undoing the COMMIT by using the HASH code
+
+###  Bring the changes from GitHub to Local Repo ###
+
+git pull origin master
+
+Pulling the changes from the Origin / GitHub Master branch to your local MASTER branch
 		
 
