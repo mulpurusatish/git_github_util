@@ -1,0 +1,98 @@
+### Create Local Repository ###
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands
+$ git init
+Initialized empty Git repository in C:/Users/mulpu/OneDrive/Tools/Git_workspace/github/projects/git_commands/.git/
+
+### ADD file ###
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+$ touch first.txt
+
+### Verify the STATUS ###
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+### Add file to the STAGING area / environment ###
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+$ git add first.txt
+
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   first.txt
+		
+
+Note : Staging environment ie stage / index
+
+###  Create COMMIT ###
+
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+$ git commit -m "first.txt : First commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+Note : GIT is getting used for the first time, please set the required info - name & email.
+
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+$ git commit -m "first.txt : First commit"
+[master (root-commit) 0f7d73b] first.txt : First commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 first.txt
+
+### Create a new BRANCH ###
+
+Plannig to add new FEATURE, but worried about the consequences. This is where GIT BRANCHES come in. 
+
+Branches allow you to move back and forth between 'states' of a project. Once you're done with the feature / page, you can merge your changes from your branch into the master branch.
+
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+$ git branch
+* master
+
+Checkout option will be used to create new BRANCH n switched to the new BRANCH with the MASTER branch code, here.
+
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (master)
+$ git checkout -b branch1                                                                                               
+Switched to a new branch 'branch1'
+
+mulpu@satishvm MINGW64 ~/OneDrive/Tools/Git_workspace/github/projects/git_commands (branch1)
+$ git branch
+* branch1
+  master
+  
+Now we can have the changes in the respective branches only.. until MERGE happens.  
+
+
+
+###  ###
+
+###  ###
+
+###  ###
+
+###  ###
+
+###  ###
+		
+
